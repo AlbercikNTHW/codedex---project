@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Albercik Pizzeria</title>
+  </head>
+  <body>
+    <header>
+      <img id="header-img" src="Pizza_margherita.jpg" alt="Restaurant header image">
+      <h1>Albercik Pizzeria</h1>
+      <nav>
+        <h2><a href="#menu">Menu</a></h2>
+        <h2><a href="#order-form">Order Form</a></h2>
+      </nav>
+    </header>
+
+    <main>
+      <section id="menu">
+        <h2>Menu</h2>
+
+        <article>
+          <img src="Espaguetis.jpg" alt="Spaghetti Pomodoro">
+          <h3>Spaghetti Pomodoro</h3>
+          <p>Spaghetti with tomato sauce. <i>$12</i></p>
+        </article>
+
+        <article>
+          <img src="Pizza_margherita.jpg" alt="Pizza Margherita">
+          <h3>Pizza Margherita</h3>
+          <p>Pizza with cheese and tomato. <i>$10</i></p>
+        </article>
+
+        <article>
+          <img src="restaurant.jpg" alt="Tiramisu">
+          <h3>Tiramisu</h3>
+          <p>Sweet dessert with coffee. <i>$7</i></p>
+        </article>
+      </section>
+
+      <section id="order-form">
+        <h2>Place Your Order</h2>
+        <form>
+          <label for="spaghetti">Spaghetti (Qty):</label>
+          <input type="number" id="spaghetti" name="spaghetti" min="0">
+
+          <label for="pizza">Pizza (Qty):</label>
+          <input type="number" id="pizza" name="pizza" min="0">
+
+          <label for="tiramisu">Tiramisu (Qty):</label>
+          <input type="number" id="tiramisu" name="tiramisu" min="0">
+
+          <p>Sides:</p>
+          <label><input type="checkbox" name="sides" value="bread"> Garlic Bread</label>
+          <label><input type="checkbox" name="sides" value="salad"> Salad</label>
+
+          <p>Drinks:</p>
+          <label><input type="radio" name="drink" value="water"> Water</label>
+          <label><input type="radio" name="drink" value="wine"> Wine</label>
+          <label><input type="radio" name="drink" value="soda"> Soda</label>
+
+          <label for="requests">Special Requests:</label>
+          <textarea id="requests" name="requests"></textarea>
+
+          <input type="submit" value="Go To Checkout">
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Made with love by Albercik</p>
+    </footer>
+  </body>
+</html>
